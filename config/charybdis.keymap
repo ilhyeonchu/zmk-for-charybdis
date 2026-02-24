@@ -109,7 +109,7 @@
             
         };
 
-       mouse {
+        mouse {
             bindings = <
 &trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
 &trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans

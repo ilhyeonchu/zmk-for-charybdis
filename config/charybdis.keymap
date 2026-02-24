@@ -84,12 +84,12 @@
 
         layer_1 {
             bindings = <
-&kp F1          &kp F2  &kp F3  &kp F4        &kp F5     &kp F6        &kp F7     &kp F8      &kp F9      &kp F10            &kp F11  &kp F12
-&kp CAPS        &none   &none   &none         &none      &bt BT_NXT    &none      &none       &kp UP      &none              &none    &none
-&kp LEFT_SHIFT  &none   &none   &none         &none      &bt BT_CLR    &none      &kp LEFT    &kp DOWN    &kp RIGHT          &none    &none
-&kp LCTRL       &none   &none   &none         &none      &none         &none      &none       &kp PERIOD  &kp RIGHT_BRACKET  &none    &kp EQUAL
-                                &kp LEFT_WIN  &kp SPACE  &none         &kp LALT   &kp DELETE
-                                              &mkp MB1   &mkp MB2      &kp ENTER
+&kp F1                &kp F2     &kp F3            &kp F4          &kp F5         &kp F6          &kp F7                 &kp F8     &kp F9     &kp F10     &kp F11   &kp F12
+&kp LS(UNDERSCORE)    &kp N1     &kp N2            &kp N3          &kp N4         &kp N5          &kp N6                 &kp N7     &kp N8     &kp N9      &kp N0    &kp BSLH
+&kp LSHFT             &kp ESC    &kp TAB           &kp BSPC        &kp RET        &kp LS(DQT)     &kp LEFT               &kp DOWN   &kp UP     &kp RIGHT   &kp SQT   &kp LEFT_SHIFT
+&mt LEFT_SHIFT CARET  &kp COMMA  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LS(PRCNT)  &kp LS(STAR)    &kp LS(PLUS)           &kp MINUS  &kp EQUAL  &kp PERIOD  &kp FSLH  &mt RIGHT_SHIFT DOLLAR
+                                                   &kp COMMA       &trans         &trans          &kp LEFT_PARENTHESIS   &kp SPACE
+                                                                   &trans         &trans          &kp RIGHT_PARENTHESIS
             >;
 
             trackball-bindings = <&tsl>;
@@ -97,12 +97,12 @@
 
         /* layer_2 {
             bindings = <
-&none  &none   &none    &none   &none         &none         &kp N1         &none         &none     &none  &none   &to 0
-&none  &none   &none    &none   &none         &none         &none         &none          &rgb_ug RGB_BRD &rgb_ug RGB_BRI  &rgb_ug RGB_EFF   &rgb_ug RGB_TOG
-&none  &none   &none    &none   &none         &none         &none         &mkp LCLK     &mkp RCLK  &none  &none   &none
-&none  &none   &none    &none   &bt BT_NXT  &bt BT_CLR    &none         &none         &none     &none  &none   &none
-                                   &none         &none         &none         &none         &none
-                                                 &none         &none         &none
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4     &trans         &trans        &trans        &trans        &trans        &trans
+&kp ESC         &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)   &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(PLUS)
+&kp TAB         &kp N1        &kp N2        &kp N3          &kp N4        &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &trans
+&kp LEFT_SHIFT  &kp LBKT      &kp RBKT      &kp LS(LBRC)    &kp LS(RBRC)  &kp RBKT         &kp LS(LT)     &kp LS(GT)    &kp COMMA     &kp DOT       &kp FSLH      &kp MINUS
+                                            &sk LEFT_SHIFT  &kp SPACE     &kp BSPC         &trans         &trans
+                                                            &trans        &trans           &trans
             >;
           trackball-bindings = <&tsl>;
             

@@ -97,12 +97,12 @@
 
         layer_2 {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4     &trans         &trans        &trans        &trans        &trans        &trans
-&kp ESC         &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)   &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(PLUS)
-&kp TAB         &kp N1        &kp N2        &kp N3          &kp N4        &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &trans
-&kp LEFT_SHIFT  &kp LBKT      &kp RBKT      &kp LS(LBRC)    &kp LS(RBRC)  &kp RBKT         &kp LS(LT)     &kp LS(GT)    &kp COMMA     &kp DOT       &kp FSLH      &kp MINUS
-                                            &sk LEFT_SHIFT  &kp SPACE     &kp BSPC         &trans         &trans
-                                                            &trans        &trans           &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans          &trans        &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&mkp LCLK       &mkp LCLK     &mkp RCLK     &msc SCRL_UP    &msc SCRL_DOWN  &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
+&trans          &trans        &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
+                                            &trans          &trans          &trans    &mkp LCLK  &mkp RCLK
+                                                            &trans          &trans    &trans
             >;
 
             trackball-bindings = <&tsl>;

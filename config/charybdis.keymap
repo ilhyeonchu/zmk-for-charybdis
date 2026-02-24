@@ -50,7 +50,6 @@
     };
 
 
-/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -131,6 +130,6 @@
             >;
                 trackball-bindings = <&tmv_fine>;
                 
-        };*/
+        };
     };
 };

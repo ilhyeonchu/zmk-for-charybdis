@@ -118,6 +118,8 @@
                                  &trans        &trans          &trans    &mkp LCLK  &mkp RCLK
                                                &trans          &trans    &trans
             >;
+            
+            trackball-bindings = <&tmv_coarse>;
         };
 
         /* layer_4 {

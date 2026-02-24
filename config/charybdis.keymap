@@ -95,7 +95,7 @@
             trackball-bindings = <&tsl>;
         };
 
-        layer_2 {
+        /* layer_2 {
             bindings = <
 &bt BT_CLR      &bt BT_NXT    &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
 &trans          &trans        &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
@@ -109,7 +109,7 @@
             
         };
 
-        /* layer_3 {
+        layer_3 {
             bindings = <
 &trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
 &trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans

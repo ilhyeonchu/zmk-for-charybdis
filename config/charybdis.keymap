@@ -77,11 +77,11 @@
             trackball-bindings = <&tmv_coarse>;
         };
 
-        /* layer_2 {
+        layer_2 {
             bindings = <
 &bt BT_CLR      &bt BT_NXT    &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
 &trans          &trans        &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans          &mkp LCLK     &mkp RCLK     &msc SCRL_UP    &msc SCRL_DOWN  &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
+&trans          &mkp LCLK     &mkp RCLK     &trans          &trans          &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
 &trans          &trans        &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
                                             &trans          &trans          &trans    &mkp LCLK  &mkp RCLK
                                                             &trans          &trans    &trans
@@ -91,7 +91,7 @@
             
         };
 
-        layer_3 {
+        /* layer_3 {
             bindings = <
 &trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
 &trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans

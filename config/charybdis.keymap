@@ -18,6 +18,80 @@
 };
 
 / {
+    macros {
+        To1_macro: To1_macro {
+            compatible = "zmk,behavior-macro";
+            label = "To1_macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_EFF &rgb_ug RGB_COLOR_HSB(128,100,50) &to 1>;
+        };
+
+        To0_macro: To0_macro {
+            compatible = "zmk,behavior-macro";
+            label = "To0_macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_EFR &to 0>;
+        };
+
+        To2_macro: To2_macro {
+            compatible = "zmk,behavior-macro";
+            label = "To2_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&to 2>,
+                <&macro_wait_time 30>,
+                <&rgb_ug RGB_COLOR_HSB(250,100,50)>;
+        };
+
+        coc: coc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_GUI &sk LEFT_SHIFT &sk LEFT_ALT>;
+            label = "COC";
+        };
+    };
+
+    behaviors {
+        shiftorcoc: shiftorcoc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFTORCOC";
+            bindings = <&kp>, <&coc>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+        };
+
+        homerow: homerow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            quick-tap-ms = <300>;
+        };
+
+        HoldTaptokp: HoldTaptokp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAPTOKP";
+            bindings = <&to>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+        };
+
+        HoldKpAndTapMouse: HoldKpAndTapMouse {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDKPANDTAPMOUSE";
+            bindings = <&kp>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+        };
+    };
+
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 

@@ -57,8 +57,8 @@
 &kp TAB                   &kp Q             &kp W        &kp E                   &kp R             &kp T                 &kp Y         &kp U           &kp I           &kp O        &kp P                      &kp BACKSPACE
 &kp RALT                  &mt LEFT_SHIFT A  &mt LCTRL S  &mt LEFT_GUI D          &mt LEFT_ALT F    &kp G                 &kp H         &mt LEFT_ALT J  &mt LEFT_GUI K  &mt LCTRL L  &mt RIGHT_SHIFT SEMICOLON  &kp LEFT_ALT
 &shiftorcoc LEFT_SHIFT 0  &kp Z             &kp X        &kp C                   &kp V             &kp B                 &kp N         &kp M           &kp COMMA       &kp DOT      &kp FSLH                   &shiftorcoc RIGHT_SHIFT 0
-                                                         &homerow LEFT_GUI HASH  &lt 1 LEFT_SHIFT  &lt 2 LEFT_CONTROL    &kp GRAVE     &kp SPACE
-                                                                                 &lt 3 LEFT_ALT    &mkp LCLK             &kp CAPSLOCK
+                                                         &homerow LEFT_GUI HASH  &lt 1 LEFT_SHIFT  &lt 3 LEFT_CONTROL    &kp GRAVE     &kp SPACE
+                                                                                 &lt 2 LEFT_ALT    &mkp LCLK             &kp CAPSLOCK
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -68,7 +68,7 @@
             bindings = <
 &kp F1                &kp F2     &kp F3            &kp F4          &kp F5         &kp F6          &kp F7                 &kp F8     &kp F9     &kp F10     &kp F11   &kp F12
 &kp LS(UNDERSCORE)    &kp N1     &kp N2            &kp N3          &kp N4         &kp N5          &kp N6                 &kp N7     &kp N8     &kp N9      &kp N0    &kp BSLH
-&mkp LCLK             &kp ESC    &kp TAB           &kp BSPC        &kp RET        &kp LS(DQT)     &kp LEFT               &kp DOWN   &kp UP     &kp RIGHT   &kp SQT   &mkp RCLK
+&kp LSHFT             &kp ESC    &kp TAB           &kp BSPC        &kp RET        &kp LS(DQT)     &kp LEFT               &kp DOWN   &kp UP     &kp RIGHT   &kp SQT   &kp LEFT_SHIFT
 &mt LEFT_SHIFT CARET  &kp COMMA  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LS(PRCNT)  &kp LS(STAR)    &kp LS(PLUS)           &kp MINUS  &kp EQUAL  &kp PERIOD  &kp FSLH  &mt RIGHT_SHIFT DOLLAR
                                                    &kp COMMA       &trans         &trans          &kp LEFT_PARENTHESIS   &kp SPACE
                                                                    &trans         &trans          &kp RIGHT_PARENTHESIS
@@ -79,6 +79,20 @@
 
         layer_2 {
             bindings = <
+&bt BT_CLR      &bt BT_NXT    &trans                    &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans          &trans        &trans                    &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans          &trans        &lt 3 LEFT_CONTROL        &mkp LCLK       &mkp RCLK       &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
+&trans          &trans        &trans                    &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
+                                                        &trans          &trans          &trans    &mkp LCLK  &mkp RCLK
+                                                                        &trans          &trans    &trans
+            >;
+
+            trackball-bindings = <&tmv_coarse>;
+            
+        };
+
+        layer_3 {
+            bindings = <
 &bt BT_CLR      &bt BT_NXT    &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
 &trans          &trans        &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
 &trans          &mkp LCLK     &mkp RCLK     &trans          &trans          &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
@@ -86,25 +100,11 @@
                                             &trans          &trans          &trans    &mkp LCLK  &mkp RCLK
                                                             &trans          &trans    &trans
             >;
-
-            trackball-bindings = <&tsl>;
-            
-        };
-
-        /* layer_3 {
-            bindings = <
-&trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&mkp LCLK  &mkp LCLK  &mkp RCLK  &msc SCRL_UP  &msc SCRL_DOWN  &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
-&trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-                                 &trans        &trans          &trans    &mkp LCLK  &mkp RCLK
-                                               &trans          &trans    &trans
-            >;
             
             trackball-bindings = <&tsl>;
         };
 
-        layer_4 {
+        /* layer_4 {
             bindings = <
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans

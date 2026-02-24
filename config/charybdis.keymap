@@ -104,7 +104,8 @@
                                             &sk LEFT_SHIFT  &kp SPACE     &kp BSPC         &trans         &trans
                                                             &trans        &trans           &trans
             >;
-          trackball-bindings = <&tsl>;
+
+            trackball-bindings = <&tsl>;
             
         };
 
@@ -117,7 +118,6 @@
                                  &trans        &trans          &trans    &mkp LCLK  &mkp RCLK
                                                &trans          &trans    &trans
             >;
-            
         };
 
         /* layer_4 {

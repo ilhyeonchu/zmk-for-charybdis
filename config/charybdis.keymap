@@ -18,6 +18,15 @@
 };
 
 / {
+    macros {
+        coc: coc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_GUI &sk LEFT_SHIFT &sk LEFT_ALT>;
+            label = "COC";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -98,6 +107,6 @@
             >;
                 trackball-bindings = <&tmv_fine>;
                 
-        };
+        };*/
     };
 };

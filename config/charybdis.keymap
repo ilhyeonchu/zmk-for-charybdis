@@ -79,28 +79,27 @@
 
         layer_2 {
             bindings = <
-&bt BT_CLR      &bt BT_NXT    &trans                    &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans          &trans        &trans                    &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans          &trans        &lt 3 LEFT_CONTROL        &mkp LCLK       &mkp RCLK       &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
-&trans          &trans        &trans                    &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-                                                        &trans          &trans          &trans    &mkp LCLK  &mkp RCLK
-                                                                        &trans          &trans    &trans
+&bt BT_CLR  &bt BT_NXT    &trans              &trans        &trans     &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans      &bt BT_SEL 0  &bt BT_SEL 1        &bt BT_SEL 2  &trans     &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans      &trans        &lt 3 LEFT_CONTROL  &mkp LCLK     &mkp RCLK  &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
+&trans      &trans        &trans              &trans        &trans     &trans    &trans     &trans     &trans  &trans  &trans  &trans
+                                              &trans        &trans     &trans    &mkp LCLK  &mkp RCLK
+                                                            &trans     &trans    &trans
             >;
 
             trackball-bindings = <&tmv_coarse>;
-            
         };
 
         layer_3 {
             bindings = <
-&bt BT_CLR      &bt BT_NXT    &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans          &mkp LCLK     &mkp RCLK     &trans          &trans          &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans          &trans          &trans    &trans     &trans     &trans  &trans  &trans  &trans
-                                            &trans          &trans          &trans    &mkp LCLK  &mkp RCLK
-                                                            &trans          &trans    &trans
+&bt BT_CLR  &bt BT_NXT  &trans     &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans      &trans      &trans     &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans      &mkp LCLK   &mkp RCLK  &trans  &trans  &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
+&trans      &trans      &trans     &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans  &trans
+                                   &trans  &trans  &trans    &mkp LCLK  &mkp RCLK
+                                           &trans  &trans    &trans
             >;
-            
+
             trackball-bindings = <&tsl>;
         };
 
